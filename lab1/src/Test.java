@@ -15,8 +15,13 @@ class Bicycle {
 class MountainBike extends Bicycle {
     private int seatHeight;
 
-    MountainBike(int gear, int speed, int startHeight) {
+    MountainBike(int gear, int speed, int startHeight) throws Exception {
         super(gear, speed);
+
+        if (startHeight < 20 || startHeight > 35) {
+            throw new Exception("Invalid seat height");
+        }
+
         seatHeight = startHeight;
     }
 
@@ -32,8 +37,12 @@ public class Test {
     private static final int START_HEIGHT = 25;
 
     public static void main(String[] args) {
-        MountainBike mb = new MountainBike(Test.GEAR, Test.SPEED, Test.START_HEIGHT);
-        Test.printMessage(mb);
+        try {
+            MountainBike mb = new MountainBike(Test.GEAR, Test.SPEED, Test.START_HEIGHT);
+            Test.printMessage(mb);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private static void printMessage(MountainBike mb) {
