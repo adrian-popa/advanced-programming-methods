@@ -8,7 +8,7 @@ public class Repository implements IRepository {
     private int length = 0;
 
     public void addObject(IObject object) throws Exception {
-        if (object.getVolume() < 0) {
+        if (object.getVolume() <= 0) {
             throw new Exception("The volume must have a positive value.");
         }
         if (length == 50) {

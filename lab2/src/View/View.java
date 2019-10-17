@@ -17,6 +17,10 @@ public class View {
     private static final IObject object5 = new Cylinder(36);
 
     public static void main(String[] args) {
+        testUI();
+    }
+
+    private static void testUI() {
         Repository repository = new Repository();
         Controller controller = new Controller(repository);
 
@@ -26,15 +30,15 @@ public class View {
             controller.addObject(View.object3);
             controller.addObject(View.object4);
             controller.addObject(View.object5);
-            System.out.println("Added a total of 5 objects\n.");
+            System.out.println("Added a total of 5 objects.\n");
 
-            System.out.println("Object with a volume larger than 25:");
+            System.out.println("Objects with a volume larger than 25:");
             System.out.println(controller.getByVolume(25));
 
             controller.removeObject(1);
             System.out.println("Removed object 2.\n");
 
-            System.out.println("Object with a volume larger than 25:");
+            System.out.println("Objects with a volume larger than 25:");
             System.out.println(controller.getByVolume(25));
         } catch (Exception e) {
             System.out.println(e.getMessage());
