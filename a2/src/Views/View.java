@@ -116,16 +116,16 @@ public class View {
 
     private static void displayMainMenu() {
         System.out.println("Please choose an option:");
-        System.out.println("1 - Execute Program 1");
-        System.out.println("2 - Execute Program 2");
-        System.out.println("3 - Execute Program 3");
-        System.out.println("0 - Exit");
+        System.out.println("1: Execute Program 1");
+        System.out.println("2: Execute Program 2");
+        System.out.println("3: Execute Program 3");
+        System.out.println("0: Exit");
     }
 
     private static void displayStepsMenu() {
         System.out.println("Choose the execution method:");
-        System.out.println("1 - One step execution");
-        System.out.println("2 - All steps execution");
-        System.out.println("0 - Back");
+        System.out.println("1: One step execution");
+        System.out.println("2: All steps execution");
+        System.out.println("0: Back");
     }
 }

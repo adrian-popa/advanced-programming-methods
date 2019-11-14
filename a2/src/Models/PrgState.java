@@ -45,15 +45,8 @@ public class PrgState {
     }
 
     public String toString() {
-        String s = "";
-
-        s += "Exe Stack:\n";
-        s += exeStack.toString() + "\n";
-        s += "Symb Table:\n";
-        s += symTable.toString() + "\n";
-        s += "Out:\n";
-        s += out.toString() + "\n";
-
-        return s;
+        return "ExeStack:\n" + exeStack.toString() + "\n" +
+                "SymTable:\n" + symTable.toString() + "\n" +
+                "Out:\n" + out.toString() + "\n";
     }
 }
