@@ -1,7 +1,8 @@
 package Repositories;
 
-import Exceptions.MyException;
 import Models.PrgState;
+
+import java.io.IOException;
 
 public interface IRepository {
 
@@ -9,5 +10,5 @@ public interface IRepository {
 
     PrgState getCrtPrg();
 
-    void logPrgStateExec();
+    void logPrgStateExec() throws IOException;
 }

@@ -1,6 +1,5 @@
 package Repositories;
 
-import Exceptions.MyException;
 import Models.Collections.MyIList;
 import Models.Collections.MyList;
 import Models.PrgState;
@@ -33,13 +32,9 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public void logPrgStateExec() {
-        try {
-            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
-            logFile.print(getCrtPrg());
-            logFile.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void logPrgStateExec() throws IOException {
+        PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+        logFile.print(getCrtPrg());
+        logFile.close();
     }
 }

@@ -14,3 +14,5 @@ interpreter/out/
 interpreter/lib/
 
 interpreter/.idea/
+
+interpreter/log*.txt
