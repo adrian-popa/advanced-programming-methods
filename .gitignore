@@ -1,16 +1,16 @@
 
 *.iml
 
-lab1/.idea/
-
 lab1/out/
+
+lab1/.idea/
 
 lab2/out/
 
 lab2/.idea/
 
-a2/.idea/
+interpreter/out/
 
-a2/lib/
+interpreter/lib/
 
-a2/out/
+interpreter/.idea/

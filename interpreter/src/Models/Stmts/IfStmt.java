@@ -20,7 +20,7 @@ public class IfStmt implements IStmt {
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException {
+    public void execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getExeStack();
         Value cond = exp.eval(state.getSymTable());
 
@@ -33,7 +33,6 @@ public class IfStmt implements IStmt {
             else
                 stk.push(elseS);
         }
-        return state;
     }
 
     @Override

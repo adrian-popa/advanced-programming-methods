@@ -15,12 +15,11 @@ public class PrintStmt implements IStmt {
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException {
+    public void execute(PrgState state) throws MyException {
         MyIList<Value> list = state.getOutList();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         Value val = exp.eval(symTbl);
         list.add(val);
-        return state;
     }
 
     @Override

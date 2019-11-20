@@ -13,8 +13,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class readFile implements IStmt {
-    private Exp exp;
-    private String name;
+    private final Exp exp;
+    private final String name;
 
     public readFile(Exp exp, String name) {
         this.exp = exp;
@@ -22,7 +22,7 @@ public class readFile implements IStmt {
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException, IOException {
+    public void execute(PrgState state) throws MyException, IOException {
         if (state.getSymTable().isDefined(name)) {
             if (state.getSymTable().lookup(name).getType() instanceof IntType) {
                 Value val = this.exp.eval(state.getSymTable());
@@ -46,7 +46,6 @@ public class readFile implements IStmt {
                 throw new MyException("Associated value type is not int.");
         } else
             throw new MyException("Variable name is not defined in the symbol table.");
-        return state;
     }
 
     @Override

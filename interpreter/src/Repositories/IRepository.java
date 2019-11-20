@@ -9,5 +9,5 @@ public interface IRepository {
 
     PrgState getCrtPrg();
 
-    void logPrgStateExec() throws MyException;
+    void logPrgStateExec();
 }

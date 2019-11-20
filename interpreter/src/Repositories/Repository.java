@@ -33,7 +33,7 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public void logPrgStateExec() throws MyException {
+    public void logPrgStateExec() {
         try {
             PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
             logFile.print(getCrtPrg());

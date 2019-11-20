@@ -7,7 +7,7 @@ import Models.Commands.Command;
 import java.io.IOException;
 
 public class RunExample extends Command {
-    private Controller ctr;
+    private final Controller ctr;
 
     RunExample(String key, String desc, Controller ctr) {
         super(key, desc);

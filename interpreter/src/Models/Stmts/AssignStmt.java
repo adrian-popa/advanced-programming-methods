@@ -17,7 +17,7 @@ public class AssignStmt implements IStmt {
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException {
+    public void execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
 
         if (symTbl.isDefined(id)) {
@@ -30,7 +30,6 @@ public class AssignStmt implements IStmt {
         } else
             throw new MyException("the used variable" + id + " was not declared before");
 
-        return state;
     }
 
     @Override

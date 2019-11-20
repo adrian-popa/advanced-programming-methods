@@ -11,14 +11,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class closeRFile implements IStmt {
-    private Exp exp;
+    private final Exp exp;
 
     public closeRFile(Exp exp) {
         this.exp = exp;
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException, IOException {
+    public void execute(PrgState state) throws MyException, IOException {
         Value val = this.exp.eval(state.getSymTable());
         if (val.getType() instanceof StringType) {
             StringValue sv = (StringValue) val;
@@ -31,7 +31,6 @@ public class closeRFile implements IStmt {
                 throw new MyException("Filename doesn't exist!");
         } else
             throw new MyException("Expression doesn't evaluate to a string.");
-        return state;
     }
 
     @Override

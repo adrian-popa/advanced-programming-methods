@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 class TextMenu {
-    private Map<String, Command> commands;
+    private final Map<String, Command> commands;
 
     TextMenu() {
         commands = new HashMap<>();
@@ -27,6 +27,7 @@ class TextMenu {
 
     void show() {
         Scanner scanner = new Scanner(System.in);
+        // noinspection InfiniteLoopStatement
         while (true) {
             printMenu();
             System.out.print("Input the option: ");
