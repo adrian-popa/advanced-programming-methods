@@ -11,12 +11,14 @@ public class PrgState {
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
     private MyIDictionary<String, BufferedReader> fileTable;
+    private MyIHeap<Value> heap;
 
     public PrgState(IStmt prg) {
         exeStack = new MyStack<>();
         symTable = new MyDictionary<>();
         out = new MyList<>();
         fileTable = new MyDictionary<>();
+        heap = new MyHeap<>();
 
         exeStack.push(prg);
     }
@@ -53,10 +55,19 @@ public class PrgState {
         fileTable = d;
     }
 
+    public MyIHeap<Value> getHeap() {
+        return heap;
+    }
+
+    public void setHeap(MyIHeap<Value> h) {
+        heap = h;
+    }
+
     public String toString() {
         return "ExeStack:\n" + exeStack.toString() +
                 "SymTable:\n" + symTable.toString() +
                 "Out:\n" + out.toString() + "\n" +
-                "FileTable:\n" + fileTable.toString() + "\n";
+                "FileTable:\n" + fileTable.toString() +
+                "Heap:\n" + heap.toString() + "\n\n";
     }
 }

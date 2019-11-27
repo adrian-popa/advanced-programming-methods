@@ -19,7 +19,7 @@ public class closeRFile implements IStmt {
 
     @Override
     public void execute(PrgState state) throws MyException, IOException {
-        Value val = this.exp.eval(state.getSymTable());
+        Value val = this.exp.eval(state.getSymTable(), state.getHeap());
         if (val.getType() instanceof StringType) {
             StringValue sv = (StringValue) val;
             String expVal = sv.getValue();

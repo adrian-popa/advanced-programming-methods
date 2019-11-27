@@ -1,10 +1,10 @@
 package Views;
 
-public abstract class Command {
+abstract class Command {
     private final String key;
     private final String description;
 
-    protected Command(String key, String description) {
+    Command(String key, String description) {
         this.key = key;
         this.description = description;
     }

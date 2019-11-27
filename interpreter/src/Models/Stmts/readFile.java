@@ -25,7 +25,7 @@ public class readFile implements IStmt {
     public void execute(PrgState state) throws MyException, IOException {
         if (state.getSymTable().isDefined(name)) {
             if (state.getSymTable().lookup(name).getType() instanceof IntType) {
-                Value val = this.exp.eval(state.getSymTable());
+                Value val = this.exp.eval(state.getSymTable(), state.getHeap());
                 if (val.getType() instanceof StringType) {
                     StringValue sv = (StringValue) val;
                     String expValue = sv.getValue();

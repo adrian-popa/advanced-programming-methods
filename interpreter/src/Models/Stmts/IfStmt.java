@@ -22,7 +22,7 @@ public class IfStmt implements IStmt {
     @Override
     public void execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getExeStack();
-        Value cond = exp.eval(state.getSymTable());
+        Value cond = exp.eval(state.getSymTable(), state.getHeap());
 
         if (!(cond.getType() instanceof BoolType))
             throw new MyException("Condition " + cond + "is not of boolean type!");

@@ -2,6 +2,7 @@ package Models.Stmts;
 
 import Exceptions.MyException;
 import Models.Collections.MyIDictionary;
+import Models.Collections.MyIHeap;
 import Models.Exps.Exp;
 import Models.PrgState;
 import Models.Types.Type;
@@ -19,9 +20,10 @@ public class AssignStmt implements IStmt {
     @Override
     public void execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
+        MyIHeap<Value> hp = state.getHeap();
 
         if (symTbl.isDefined(id)) {
-            Value val = exp.eval(symTbl);
+            Value val = exp.eval(symTbl, hp);
             Type typId = (symTbl.lookup(id)).getType();
             if ((val.getType()).equals(typId))
                 symTbl.put(id, val);

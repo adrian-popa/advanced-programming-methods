@@ -2,6 +2,7 @@ package Models.Exps;
 
 import Exceptions.MyException;
 import Models.Collections.MyIDictionary;
+import Models.Collections.MyIHeap;
 import Models.Types.BoolType;
 import Models.Values.BoolValue;
 import Models.Values.Value;
@@ -18,10 +19,10 @@ public class LogicExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
-        Value v1 = exp1.eval(tbl);
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Value> hp) throws MyException {
+        Value v1 = exp1.eval(tbl, hp);
         if (v1.getType() instanceof BoolType) {
-            Value v2 = exp2.eval(tbl);
+            Value v2 = exp2.eval(tbl, hp);
             if (v2.getType() instanceof BoolType) {
                 BoolValue bv1 = (BoolValue) v1;
                 BoolValue bv2 = (BoolValue) v2;

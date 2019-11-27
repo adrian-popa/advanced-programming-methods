@@ -3,6 +3,7 @@ package Models.Collections;
 import Exceptions.MyException;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MyDictionary<K, V> implements MyIDictionary<K, V> {
     private final HashMap<K, V> dict;
@@ -38,6 +39,11 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
     }
 
     @Override
+    public Map<K, V> getContent() {
+        return dict;
+    }
+
+    @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
 
@@ -48,10 +54,5 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
         }
 
         return s.toString();
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return dict.isEmpty();
     }
 }

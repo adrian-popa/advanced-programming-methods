@@ -4,9 +4,15 @@ import Exceptions.MyException;
 import Models.Collections.MyIStack;
 import Models.PrgState;
 import Models.Stmts.IStmt;
+import Models.Values.RefValue;
+import Models.Values.Value;
 import Repositories.IRepository;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Controller {
     private final IRepository repo;
@@ -29,7 +35,26 @@ public class Controller {
 
         while (!prg.getExeStack().isEmpty()) {
             oneStep(prg);
+            prg.getHeap().setContent(unsafeGarbageCollector(
+                    getAddrFromSymTable(prg.getSymTable().getContent().values()),
+                    prg.getHeap().getContent()));
             repo.logPrgStateExec();
         }
+    }
+
+    private Map<Integer, Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer, Value> heap) {
+        return heap.entrySet().stream()
+                .filter(e -> symTableAddr.contains(e.getKey()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
+
+    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues) {
+        return symTableValues.stream()
+                .filter(v -> v instanceof RefValue)
+                .map(v -> {
+                    RefValue v1 = (RefValue) v;
+                    return v1.getAddr();
+                })
+                .collect(Collectors.toList());
     }
 }

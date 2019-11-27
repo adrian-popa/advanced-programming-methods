@@ -2,6 +2,8 @@ package Models.Collections;
 
 import Exceptions.MyException;
 
+import java.util.Map;
+
 public interface MyIDictionary<K, V> {
 
     boolean isDefined(K key);
@@ -12,5 +14,5 @@ public interface MyIDictionary<K, V> {
 
     void remove(K key) throws MyException;
 
-    boolean isEmpty();
+    Map<K, V> getContent();
 }

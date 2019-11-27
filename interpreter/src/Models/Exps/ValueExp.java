@@ -1,6 +1,7 @@
 package Models.Exps;
 
 import Models.Collections.MyIDictionary;
+import Models.Collections.MyIHeap;
 import Models.Values.Value;
 
 public class ValueExp implements Exp {
@@ -11,7 +12,7 @@ public class ValueExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) {
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Value> hp) {
         return e;
     }
 

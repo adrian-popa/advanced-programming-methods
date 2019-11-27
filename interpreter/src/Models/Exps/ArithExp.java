@@ -2,6 +2,7 @@ package Models.Exps;
 
 import Exceptions.MyException;
 import Models.Collections.MyIDictionary;
+import Models.Collections.MyIHeap;
 import Models.Types.IntType;
 import Models.Values.IntValue;
 import Models.Values.Value;
@@ -18,11 +19,11 @@ public class ArithExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Value> hp) throws MyException {
         Value v1, v2;
-        v1 = exp1.eval(tbl);
+        v1 = exp1.eval(tbl, hp);
         if (v1.getType().equals(new IntType())) {
-            v2 = exp2.eval(tbl);
+            v2 = exp2.eval(tbl, hp);
             if (v2.getType().equals(new IntType())) {
                 IntValue i1 = (IntValue) v1;
                 IntValue i2 = (IntValue) v2;
