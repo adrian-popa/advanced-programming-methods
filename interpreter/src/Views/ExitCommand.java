@@ -1,4 +1,4 @@
-package Models.Commands;
+package Views;
 
 public class ExitCommand extends Command {
 

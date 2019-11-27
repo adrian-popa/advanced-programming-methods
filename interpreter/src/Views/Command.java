@@ -1,4 +1,4 @@
-package Models.Commands;
+package Views;
 
 public abstract class Command {
     private final String key;

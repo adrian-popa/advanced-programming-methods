@@ -1,7 +1,5 @@
 package Views;
 
-import Models.Commands.Command;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
