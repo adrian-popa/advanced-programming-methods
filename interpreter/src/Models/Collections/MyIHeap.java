@@ -1,12 +1,14 @@
 package Models.Collections;
 
+import Exceptions.MyException;
+
 import java.util.Map;
 
 public interface MyIHeap<T> {
 
     Integer allocate(T val);
 
-    T get(Integer addr);
+    T lookup(Integer addr) throws MyException;
 
     void put(Integer addr, T val);
 

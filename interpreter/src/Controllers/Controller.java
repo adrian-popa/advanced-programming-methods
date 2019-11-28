@@ -13,6 +13,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Controller {
     private final IRepository repo;
@@ -35,26 +36,40 @@ public class Controller {
 
         while (!prg.getExeStack().isEmpty()) {
             oneStep(prg);
-            prg.getHeap().setContent(unsafeGarbageCollector(
-                    getAddrFromSymTable(prg.getSymTable().getContent().values()),
+            prg.getHeap().setContent(safeGarbageCollector(
+                    getAddrFromSymTable(prg.getSymTable().getContent().values(), prg.getHeap().getContent().values()),
                     prg.getHeap().getContent()));
             repo.logPrgStateExec();
         }
     }
 
-    private Map<Integer, Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer, Value> heap) {
+    private Map<Integer, Value> safeGarbageCollector(List<Integer> symTableAddr, Map<Integer, Value> heap) {
         return heap.entrySet().stream()
                 .filter(e -> symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
-    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues) {
-        return symTableValues.stream()
-                .filter(v -> v instanceof RefValue)
-                .map(v -> {
-                    RefValue v1 = (RefValue) v;
-                    return v1.getAddr();
-                })
-                .collect(Collectors.toList());
+    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues, Collection<Value> heapValues) {
+        return Stream.concat(
+                heapValues.stream()
+                        .filter(v -> v instanceof RefValue)
+                        .map(v -> {
+                            RefValue v1 = (RefValue) v;
+                            return v1.getAddr();
+                        }),
+                symTableValues.stream()
+                        .filter(v -> v instanceof RefValue)
+                        .map(v -> {
+                            RefValue v1 = (RefValue) v;
+                            return v1.getAddr();
+                        })
+        ).collect(Collectors.toList());
+//        return symTableValues.stream()
+//                .filter(v -> v instanceof RefValue)
+//                .map(v -> {
+//                    RefValue v1 = (RefValue) v;
+//                    return v1.getAddr();
+//                })
+//                .collect(Collectors.toList());
     }
 }

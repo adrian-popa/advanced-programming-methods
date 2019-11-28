@@ -21,14 +21,11 @@ public class wH implements IStmt {
             Value v = state.getSymTable().lookup(this.var_name);
             if (v instanceof RefValue) {
                 int addr = ((RefValue) v).getAddr();
-                if (state.getHeap().get(addr) != null) {
-                    Value ev = this.exp.eval(state.getSymTable(), state.getHeap());
-                    if (ev.getType().equals(((RefValue) v).getLocationType()))
-                        state.getHeap().put(addr, ev);
-                    else
-                        throw new MyException("Incompatible types.");
-                } else
-                    throw new MyException("Address is not a key in the heap.");
+                Value ev = this.exp.eval(state.getSymTable(), state.getHeap());
+                if (ev.getType().equals(((RefValue) v).getLocationType()))
+                    state.getHeap().put(addr, ev);
+                else
+                    throw new MyException("Incompatible types.");
             } else
                 throw new MyException("Value not of type Reference type");
         } else
