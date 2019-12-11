@@ -18,7 +18,7 @@ public class closeRFile implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) throws MyException, IOException {
+    public PrgState execute(PrgState state) throws MyException, IOException {
         Value val = this.exp.eval(state.getSymTable(), state.getHeap());
         if (val.getType() instanceof StringType) {
             StringValue sv = (StringValue) val;
@@ -31,6 +31,7 @@ public class closeRFile implements IStmt {
                 throw new MyException("Filename doesn't exist!");
         } else
             throw new MyException("Expression doesn't evaluate to a string.");
+        return null;
     }
 
     @Override

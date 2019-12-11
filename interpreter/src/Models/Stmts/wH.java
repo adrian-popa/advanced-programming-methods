@@ -16,7 +16,7 @@ public class wH implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         if (state.getSymTable().isDefined(this.var_name)) {
             Value v = state.getSymTable().lookup(this.var_name);
             if (v instanceof RefValue) {
@@ -30,6 +30,7 @@ public class wH implements IStmt {
                 throw new MyException("Value not of type Reference type");
         } else
             throw new MyException("Variable not defined.");
+        return null;
     }
 
     @Override

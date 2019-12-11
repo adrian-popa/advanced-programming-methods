@@ -1,23 +1,23 @@
 package Repositories;
 
-import Models.Collections.MyIList;
-import Models.Collections.MyList;
 import Models.PrgState;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repository implements IRepository {
-    private final MyIList<PrgState> programs;
-    private final int currentIndex;
+    private List<PrgState> programs;
+    private int currentIndex;
     private final String logFilePath;
 
     public Repository(PrgState program, String logFilePath) {
-        currentIndex = 0;
-        programs = new MyList<>();
+        programs = new ArrayList<>();
         programs.add(program);
+        currentIndex = 0;
         this.logFilePath = logFilePath;
     }
 
@@ -27,14 +27,20 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public PrgState getCrtPrg() {
-        return programs.get(currentIndex);
+    public void logPrgStateExec(PrgState p) throws IOException {
+        PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, currentIndex != 0)));
+        logFile.print(p);
+        logFile.close();
+        currentIndex += 1;
     }
 
     @Override
-    public void logPrgStateExec() throws IOException {
-        PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
-        logFile.print(getCrtPrg());
-        logFile.close();
+    public List<PrgState> getPrgList() {
+        return programs;
+    }
+
+    @Override
+    public void setPrgList(List<PrgState> list) {
+        programs = list;
     }
 }

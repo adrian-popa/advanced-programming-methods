@@ -1,10 +1,12 @@
 package Models;
 
+import Exceptions.MyException;
 import Models.Collections.*;
 import Models.Stmts.IStmt;
 import Models.Values.Value;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 
 public class PrgState {
     private MyIStack<IStmt> exeStack;
@@ -12,6 +14,8 @@ public class PrgState {
     private MyIList<Value> out;
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Value> heap;
+    private int id;
+    private static int globalID = 1;
 
     public PrgState(IStmt prg) {
         exeStack = new MyStack<>();
@@ -20,6 +24,19 @@ public class PrgState {
         fileTable = new MyDictionary<>();
         heap = new MyHeap<>();
 
+        id = 1;
+        exeStack.push(prg);
+    }
+
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
+                    MyIDictionary<String, BufferedReader> ftbl, MyIHeap<Value> h, IStmt prg) {
+        exeStack = stk;
+        symTable = symtbl;
+        out = ot;
+        fileTable = ftbl;
+        heap = h;
+        // originalProgram = deepCopy(prg); //recreate the entire original prg
+        id = getGlobalID();
         exeStack.push(prg);
     }
 
@@ -63,8 +80,33 @@ public class PrgState {
         heap = h;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Boolean isNotCompleted() {
+        return !exeStack.isEmpty();
+    }
+
+    public PrgState oneStep() throws MyException, IOException {
+        if (exeStack.isEmpty())
+            throw new MyException("PrgState stack is empty");
+        IStmt currentStmt = exeStack.pop();
+        return currentStmt.execute(this);
+    }
+
+    public synchronized int getGlobalID() {
+        globalID *= 10;
+        return globalID;
+    }
+
     public String toString() {
-        return "ExeStack:\n" + exeStack.toString() +
+        return "PrgState with id: " + id + "\n" +
+                "ExeStack:\n" + exeStack.toString() +
                 "SymTable:\n" + symTable.toString() +
                 "Out:\n" + out.toString() + "\n" +
                 "FileTable:\n" + fileTable.toString() +

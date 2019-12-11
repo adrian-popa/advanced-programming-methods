@@ -21,10 +21,11 @@ public class CompStmt implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) {
+    public PrgState execute(PrgState state) {
         MyIStack<IStmt> stk = state.getExeStack();
         stk.push(second);
         stk.push(first);
+        return null;
     }
 
     @Override

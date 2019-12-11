@@ -20,7 +20,7 @@ public class openRFile implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) throws MyException, FileNotFoundException {
+    public PrgState execute(PrgState state) throws MyException, FileNotFoundException {
         Value val = this.exp.eval(state.getSymTable(), state.getHeap());
         if (val.getType() instanceof StringType) {
             StringValue sv = (StringValue) val;
@@ -32,6 +32,7 @@ public class openRFile implements IStmt {
                 throw new MyException("Filename already exists.");
         } else
             throw new MyException("Expression doesn't evaluate to a string.");
+        return null;
     }
 
     @Override

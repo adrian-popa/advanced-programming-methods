@@ -43,6 +43,15 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
         return dict;
     }
 
+    @SuppressWarnings("MethodDoesntCallSuperMethod")
+    @Override
+    public MyIDictionary<K, V> clone() {
+        MyIDictionary<K, V> copy = new MyDictionary<>();
+        for (K k : dict.keySet())
+            copy.put(k, dict.get(k));
+        return copy;
+    }
+
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();

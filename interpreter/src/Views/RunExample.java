@@ -3,8 +3,6 @@ package Views;
 import Controllers.Controller;
 import Exceptions.MyException;
 
-import java.io.IOException;
-
 public class RunExample extends Command {
     private final Controller ctr;
 
@@ -16,8 +14,8 @@ public class RunExample extends Command {
     @Override
     public void execute() {
         try {
-            this.ctr.allSteps();
-        } catch (MyException | IOException e) {
+            this.ctr.allStep();
+        } catch (MyException | InterruptedException e) {
             e.printStackTrace();
         }
     }

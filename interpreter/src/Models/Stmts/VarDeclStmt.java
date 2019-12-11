@@ -16,13 +16,14 @@ public class VarDeclStmt implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTable = state.getSymTable();
         if (symTable.isDefined(name))
             throw new MyException("Variable is already defined.");
         else {
             symTable.put(name, type.defaultValue());
         }
+        return null;
     }
 
     @Override

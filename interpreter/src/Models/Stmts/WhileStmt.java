@@ -19,7 +19,7 @@ public class WhileStmt implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         MyIHeap<Value> hp = state.getHeap();
 
@@ -32,6 +32,8 @@ public class WhileStmt implements IStmt {
             }
         } else
             throw new MyException("Condition exp is not a boolean.");
+
+        return null;
     }
 
     @Override

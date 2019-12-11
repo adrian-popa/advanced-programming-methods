@@ -8,7 +8,8 @@ public class NopStmt implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) {
+    public PrgState execute(PrgState state) {
+        return null;
     }
 
     @Override

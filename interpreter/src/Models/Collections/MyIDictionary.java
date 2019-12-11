@@ -15,4 +15,6 @@ public interface MyIDictionary<K, V> {
     void remove(K key) throws MyException;
 
     Map<K, V> getContent();
+
+    MyIDictionary<K, V> clone();
 }

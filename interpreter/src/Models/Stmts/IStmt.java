@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public interface IStmt {
 
-    void execute(PrgState state) throws MyException, IOException;
+    PrgState execute(PrgState state) throws MyException, IOException;
 
     String toString();
 }
