@@ -15,7 +15,7 @@ public class PrgState {
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Value> heap;
     private int id;
-    private static int globalID = 1;
+    private static int globalId = 1;
 
     public PrgState(IStmt prg) {
         exeStack = new MyStack<>();
@@ -36,7 +36,7 @@ public class PrgState {
         fileTable = ftbl;
         heap = h;
         // originalProgram = deepCopy(prg); //recreate the entire original prg
-        id = getGlobalID();
+        id = getGlobalId();
         exeStack.push(prg);
     }
 
@@ -99,9 +99,9 @@ public class PrgState {
         return currentStmt.execute(this);
     }
 
-    public synchronized int getGlobalID() {
-        globalID *= 10;
-        return globalID;
+    public synchronized int getGlobalId() {
+        globalId *= 10;
+        return globalId;
     }
 
     public String toString() {
