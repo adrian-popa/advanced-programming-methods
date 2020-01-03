@@ -1,5 +1,6 @@
 package Models.Collections;
 
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
@@ -22,6 +23,11 @@ public class MyStack<T> implements MyIStack<T> {
     @Override
     public boolean isEmpty() {
         return stk.empty();
+    }
+
+    @Override
+    public List<T> getValues() {
+        return stk.subList(0, stk.size());
     }
 
     @Override

@@ -26,6 +26,24 @@ public class Controller {
         repo = r;
     }
 
+    public void oneStep() throws MyException {
+        executor = Executors.newFixedThreadPool(2);
+        repo.setPrgList(removeCompletedPrg(repo.getPrgList()));
+        List<PrgState> programStates = repo.getPrgList();
+
+        if (programStates.size() > 0) {
+            try {
+                oneStepForAllPrg(repo.getPrgList());
+            } catch (InterruptedException e) {
+                System.out.println();
+            }
+
+            repo.setPrgList(removeCompletedPrg(repo.getPrgList()));
+            executor.shutdownNow();
+            conservativeGarbageCollector(programStates);
+        }
+    }
+
     public void oneStepForAllPrg(List<PrgState> prgList) throws MyException, InterruptedException {
         prgList.forEach(prg -> {
             try {
@@ -120,5 +138,9 @@ public class Controller {
         return inPrgList.stream()
                 .filter(PrgState::isNotCompleted)
                 .collect(Collectors.toList());
+    }
+
+    public IRepository getRepo() {
+        return this.repo;
     }
 }

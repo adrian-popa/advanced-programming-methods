@@ -14,4 +14,6 @@ public interface IRepository {
     List<PrgState> getPrgList();
 
     void setPrgList(List<PrgState> list);
+
+    PrgState getPrgById(int id);
 }

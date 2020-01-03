@@ -1,5 +1,7 @@
 package Models.Collections;
 
+import java.util.List;
+
 public interface MyIStack<T> {
 
     T pop();
@@ -7,4 +9,6 @@ public interface MyIStack<T> {
     void push(T v);
 
     boolean isEmpty();
+
+    List<T> getValues();
 }

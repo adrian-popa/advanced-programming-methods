@@ -43,4 +43,12 @@ public class Repository implements IRepository {
     public void setPrgList(List<PrgState> list) {
         programs = list;
     }
+
+    @Override
+    public PrgState getPrgById(int id) {
+        for (PrgState p : programs)
+            if (p.getId() == id)
+                return p;
+        return null;
+    }
 }

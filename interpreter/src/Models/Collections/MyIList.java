@@ -1,5 +1,7 @@
 package Models.Collections;
 
+import java.util.List;
+
 public interface MyIList<T> {
 
     void add(T element);
@@ -7,4 +9,6 @@ public interface MyIList<T> {
     int size();
 
     T get(int i);
+
+    List getContent();
 }

@@ -26,6 +26,11 @@ public class MyList<T> implements MyIList<T> {
     }
 
     @Override
+    public List getContent() {
+        return list;
+    }
+
+    @Override
     public String toString() {
         return list.toString();
     }
