@@ -104,13 +104,13 @@ public class MainWindowController implements Initializable {
         try {
             controller.oneStep();
             changePrgStateHandler(prgState);
+
             if (controller.getRepo().getPrgList().size() == 0)
                 exeButton.setDisable(true);
         } catch (MyException e) {
             Alert error = new Alert(Alert.AlertType.ERROR, e.getMessage());
             error.show();
         }
-
     }
 
     private void populatePrgStatesCount() {
@@ -120,9 +120,11 @@ public class MainWindowController implements Initializable {
     private void populateExeStackView(PrgState givenPrgState) throws MyException {
         MyIStack<IStmt> stk = givenPrgState.getExeStack();
         List<String> stkOutput = new ArrayList<>();
+
         for (IStmt stm : stk.getValues()) {
             stkOutput.add(stm.toString());
         }
+
         Collections.reverse(stkOutput);
         exeStackView.setItems(FXCollections.observableArrayList(stkOutput));
     }
@@ -153,7 +155,9 @@ public class MainWindowController implements Initializable {
     private PrgState getSelectedPrgState() {
         if (prgIdentifiersView.getSelectionModel().getSelectedIndex() == -1)
             return null;
+
         int id = prgIdentifiersView.getSelectionModel().getSelectedItem();
+
         return controller.getRepo().getPrgById(id);
     }
 }

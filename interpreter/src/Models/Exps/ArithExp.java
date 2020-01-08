@@ -4,6 +4,7 @@ import Exceptions.MyException;
 import Models.Collections.MyIDictionary;
 import Models.Collections.MyIHeap;
 import Models.Types.IntType;
+import Models.Types.Type;
 import Models.Values.IntValue;
 import Models.Values.Value;
 
@@ -49,6 +50,20 @@ public class ArithExp implements Exp {
             throw new MyException("first operand is not an integer");
 
         return null;
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = exp1.typecheck(typeEnv);
+        typ2 = exp2.typecheck(typeEnv);
+        if (typ1.equals(new IntType())) {
+            if (typ2.equals(new IntType())) {
+                return new IntType();
+            } else
+                throw new MyException("second operand is not an integer");
+        } else
+            throw new MyException("first operand is not an integer");
     }
 
     @Override

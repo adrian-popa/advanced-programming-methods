@@ -21,6 +21,10 @@ public class RefType implements Type {
         return new RefValue(0, inner);
     }
 
+    public Type getInner() {
+        return this.inner;
+    }
+
     @Override
     public String toString() {
         return "Ref(" + inner.toString() + ")";

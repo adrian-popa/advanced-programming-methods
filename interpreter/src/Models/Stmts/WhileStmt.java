@@ -6,6 +6,7 @@ import Models.Collections.MyIHeap;
 import Models.Exps.Exp;
 import Models.PrgState;
 import Models.Types.BoolType;
+import Models.Types.Type;
 import Models.Values.BoolValue;
 import Models.Values.Value;
 
@@ -34,6 +35,15 @@ public class WhileStmt implements IStmt {
             throw new MyException("Condition exp is not a boolean.");
 
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typexp = exp.typecheck(typeEnv.clone());
+        if (typexp.equals(new BoolType()))
+            return typeEnv;
+        else
+            throw new MyException("While: condition expression is not boolean");
     }
 
     @Override

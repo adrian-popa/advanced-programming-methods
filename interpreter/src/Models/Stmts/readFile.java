@@ -1,10 +1,12 @@
 package Models.Stmts;
 
 import Exceptions.MyException;
+import Models.Collections.MyIDictionary;
 import Models.Exps.Exp;
 import Models.PrgState;
 import Models.Types.IntType;
 import Models.Types.StringType;
+import Models.Types.Type;
 import Models.Values.IntValue;
 import Models.Values.StringValue;
 import Models.Values.Value;
@@ -47,6 +49,19 @@ public class readFile implements IStmt {
         } else
             throw new MyException("Variable name is not defined in the symbol table.");
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.lookup(name);
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar.equals(new IntType()))
+            if (typexp.equals(new StringType())) {
+                return typeEnv;
+            } else
+                throw new MyException("readFile: exp not a string");
+        else
+            throw new MyException("readFile: variable not an integer");
     }
 
     @Override

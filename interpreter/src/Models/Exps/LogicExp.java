@@ -4,6 +4,8 @@ import Exceptions.MyException;
 import Models.Collections.MyIDictionary;
 import Models.Collections.MyIHeap;
 import Models.Types.BoolType;
+import Models.Types.IntType;
+import Models.Types.Type;
 import Models.Values.BoolValue;
 import Models.Values.Value;
 
@@ -37,6 +39,20 @@ public class LogicExp implements Exp {
                 throw new MyException("Second parameter is not BOOLEAN.");
         } else
             throw new MyException("First parameter is not BOOLEAN");
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = exp1.typecheck(typeEnv);
+        typ2 = exp2.typecheck(typeEnv);
+        if (typ1.equals(new BoolType())) {
+            if (typ2.equals(new BoolType())) {
+                return new BoolType();
+            } else
+                throw new MyException("second operand is not BOOLEAN");
+        } else
+            throw new MyException("first operand is not BOOLEAN");
     }
 
     @Override

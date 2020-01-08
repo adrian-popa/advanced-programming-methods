@@ -1,13 +1,12 @@
 package Views;
 
 import Controllers.Controller;
+import Exceptions.MyException;
+import Models.Collections.MyDictionary;
 import Models.Exps.*;
 import Models.PrgState;
 import Models.Stmts.*;
-import Models.Types.BoolType;
-import Models.Types.IntType;
-import Models.Types.RefType;
-import Models.Types.StringType;
+import Models.Types.*;
 import Models.Values.BoolValue;
 import Models.Values.IntValue;
 import Models.Values.StringValue;
@@ -129,17 +128,43 @@ class Interpreter {
         Controller ctr10 = new Controller(repo10);
 
         TextMenu menu = new TextMenu();
-        menu.addCommand(new RunExample("1", ex1.toString(), ctr1));
-        menu.addCommand(new RunExample("2", ex2.toString(), ctr2));
-        menu.addCommand(new RunExample("3", ex3.toString(), ctr3));
-        menu.addCommand(new RunExample("4", ex4.toString(), ctr4));
-        menu.addCommand(new RunExample("5", ex5.toString(), ctr5));
-        menu.addCommand(new RunExample("6", ex6.toString(), ctr6));
-        menu.addCommand(new RunExample("7", ex7.toString(), ctr7));
-        menu.addCommand(new RunExample("8", ex8.toString(), ctr8));
-        menu.addCommand(new RunExample("9", ex9.toString(), ctr9));
-        menu.addCommand(new RunExample("10", ex10.toString(), ctr10));
-        menu.addCommand(new ExitCommand("0", "exit"));
-        menu.show();
+
+        try {
+            ex1.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("1", ex1.toString(), ctr1));
+
+            ex2.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("2", ex2.toString(), ctr2));
+
+            ex3.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("3", ex3.toString(), ctr3));
+
+            ex4.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("4", ex4.toString(), ctr4));
+
+            ex5.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("5", ex5.toString(), ctr5));
+
+            ex6.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("6", ex6.toString(), ctr6));
+
+            ex7.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("7", ex7.toString(), ctr7));
+
+            ex8.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("8", ex8.toString(), ctr8));
+
+            ex9.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("9", ex9.toString(), ctr9));
+
+            ex10.typecheck(new MyDictionary<>());
+            menu.addCommand(new RunExample("10", ex10.toString(), ctr10));
+
+            menu.addCommand(new ExitCommand("0", "exit"));
+
+            menu.show();
+        } catch (MyException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

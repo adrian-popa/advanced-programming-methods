@@ -6,6 +6,7 @@ import Models.Collections.MyIHeap;
 import Models.Collections.MyIList;
 import Models.Exps.Exp;
 import Models.PrgState;
+import Models.Types.Type;
 import Models.Values.Value;
 
 public class PrintStmt implements IStmt {
@@ -23,6 +24,12 @@ public class PrintStmt implements IStmt {
         Value val = exp.eval(symTbl, hp);
         list.add(val);
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        exp.typecheck(typeEnv);
+        return typeEnv;
     }
 
     @Override

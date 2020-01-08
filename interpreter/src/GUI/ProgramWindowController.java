@@ -1,6 +1,8 @@
 package GUI;
 
 import Controllers.Controller;
+import Exceptions.MyException;
+import Models.Collections.MyDictionary;
 import Models.Exps.*;
 import Models.PrgState;
 import Models.Stmts.*;
@@ -17,6 +19,7 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 
@@ -152,13 +155,20 @@ public class ProgramWindowController implements Initializable {
 
         selectBtn.setOnAction(actionEvent -> {
             int index = selectPrgListView.getSelectionModel().getSelectedIndex();
-            IStmt selectedProgram = selectPrgListView.getItems().get(index);
+            IStmt selectedPrg = selectPrgListView.getItems().get(index);
             index += 1;
 
-            PrgState prg = new PrgState(selectedProgram);
+            PrgState prg = new PrgState(selectedPrg);
             IRepository repo = new Repository(prg, "log" + index + ".txt");
             Controller ctr = new Controller(repo);
-            mainWindowController.setController(ctr);
+
+            try {
+                selectedPrg.typecheck(new MyDictionary<>());
+                mainWindowController.setController(ctr);
+            } catch (MyException e) {
+                Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage());
+                alert.show();
+            }
         });
     }
 

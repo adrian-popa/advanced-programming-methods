@@ -1,9 +1,11 @@
 package Models.Stmts;
 
 import Exceptions.MyException;
+import Models.Collections.MyIDictionary;
 import Models.Exps.Exp;
 import Models.PrgState;
 import Models.Types.StringType;
+import Models.Types.Type;
 import Models.Values.StringValue;
 import Models.Values.Value;
 
@@ -32,6 +34,15 @@ public class closeRFile implements IStmt {
         } else
             throw new MyException("Expression doesn't evaluate to a string.");
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typexp = exp.typecheck(typeEnv.clone());
+        if (typexp.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new MyException("closeRFile: expression type is not a string");
     }
 
     @Override
