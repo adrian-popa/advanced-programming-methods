@@ -23,18 +23,19 @@ public class Main extends Application {
         MainWindowController mainWindowController = mainLoader.getController();
 
         primaryStage.setTitle("Main Window");
-        primaryStage.setScene(new Scene(mainWindow, 1000, 800));
+        primaryStage.setScene(new Scene(mainWindow, 940, 580));
         primaryStage.show();
 
         FXMLLoader secondaryLoader = new FXMLLoader();
         secondaryLoader.setLocation(getClass().getResource("ProgramWindow.fxml"));
         Parent secondaryWindow = secondaryLoader.load();
+
         ProgramWindowController programWindowController = secondaryLoader.getController();
         programWindowController.setMainWindowController(mainWindowController);
 
         Stage secondaryStage = new Stage();
-        secondaryStage.setTitle("Select Window");
-        secondaryStage.setScene(new Scene(secondaryWindow, 600, 650));
+        secondaryStage.setTitle("Program Window");
+        secondaryStage.setScene(new Scene(secondaryWindow, 600, 400));
         secondaryStage.show();
     }
 }
