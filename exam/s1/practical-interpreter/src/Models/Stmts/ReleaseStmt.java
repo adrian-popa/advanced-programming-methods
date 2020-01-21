@@ -11,8 +11,6 @@ import Models.Types.Type;
 import Models.Values.IntValue;
 import Models.Values.Value;
 
-import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReleaseStmt implements IStmt {
@@ -29,7 +27,6 @@ public class ReleaseStmt implements IStmt {
         if (state.getSymTable().isDefined(var.toString())) {
             Value v = state.getSymTable().lookup(var.toString());
             if (v.getType().equals(new IntType())) {
-                lock.lock();
 
                 int foundIndex = ((IntValue) state.getSymTable().lookup(var.toString())).getValue();
                 MyISemaphoreTable semaphoreTable = state.getSemaphoreTable();
@@ -39,12 +36,15 @@ public class ReleaseStmt implements IStmt {
                 else {
                     MyITuple entry = semaphoreTable.getSemaphoreTable().lookup(foundIndex);
 
-                    entry.getSecond().remove(state.getId());
-
-                    semaphoreTable.getSemaphoreTable().put(foundIndex, entry);
+                    if (entry.getSecond().contains(state.getId())) {
+                        lock.lock();
+                        entry.getSecond().remove(state.getId());
+                        semaphoreTable.put(foundIndex, entry);
+                        state.setSemaphoreTable(semaphoreTable);
+                        lock.unlock();
+                    }
                 }
 
-                lock.unlock();
             } else
                 throw new MyException("Value isn't of type IntType");
         } else

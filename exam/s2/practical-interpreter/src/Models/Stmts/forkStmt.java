@@ -4,7 +4,6 @@ import Exceptions.MyException;
 import Models.Collections.MyIDictionary;
 import Models.Collections.MyStack;
 import Models.PrgState;
-import Models.Types.BoolType;
 import Models.Types.Type;
 
 public class forkStmt implements IStmt {
@@ -16,7 +15,8 @@ public class forkStmt implements IStmt {
 
     @Override
     public PrgState execute(PrgState state) {
-        return new PrgState(new MyStack<>(), state.getSymTable().clone(), state.getOutList(), state.getFileTable(), state.getHeap(), stmt);
+        return new PrgState(new MyStack<>(), state.getSymTable().clone(), state.getOutList(),
+                state.getFileTable(), state.getHeap(), state.getLatchTable(), stmt);
     }
 
     @Override

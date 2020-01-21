@@ -27,12 +27,9 @@ public class AcquireStmt implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         ReentrantLock lock = new ReentrantLock();
 
-        MyIStack<IStmt> stk = state.getExeStack();
-
         if (state.getSymTable().isDefined(var.toString())) {
             Value v = state.getSymTable().lookup(var.toString());
             if (v.getType().equals(new IntType())) {
-                lock.lock();
 
                 int foundIndex = ((IntValue) state.getSymTable().lookup(var.toString())).getValue();
                 MyISemaphoreTable semaphoreTable = state.getSemaphoreTable();
@@ -47,18 +44,21 @@ public class AcquireStmt implements IStmt {
                     int n2 = entry.getThird();
 
                     int nl = list1.size();
+
+                    lock.lock();
                     if ((n1 - n2) > nl) {
                         if (list1.contains(state.getId()))
-                            return null;
+                            System.out.println();
                         else {
                             entry.getSecond().add(state.getId());
-                            semaphoreTable.getSemaphoreTable().put(foundIndex, entry);
+                            semaphoreTable.put(foundIndex, entry);
+                            state.setSemaphoreTable(semaphoreTable);
                         }
                     } else
-                        stk.push(new AcquireStmt(var));
-                }
+                        state.getExeStack().push(new AcquireStmt(var));
 
-                lock.unlock();
+                    lock.unlock();
+                }
             } else
                 throw new MyException("Value isn't of type IntType");
         } else

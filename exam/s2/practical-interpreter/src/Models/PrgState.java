@@ -14,6 +14,7 @@ public class PrgState {
     private MyIList<Value> out;
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Value> heap;
+    private MyILatch<Integer, Integer> latchTable;
     private int id;
     private static int globalId = 1;
 
@@ -23,18 +24,20 @@ public class PrgState {
         out = new MyList<>();
         fileTable = new MyDictionary<>();
         heap = new MyHeap<>();
+        latchTable = new MyLatch<>();
 
         id = 1;
         exeStack.push(prg);
     }
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
-                    MyIDictionary<String, BufferedReader> ftbl, MyIHeap<Value> h, IStmt prg) {
+                    MyIDictionary<String, BufferedReader> ftbl, MyIHeap<Value> h, MyILatch<Integer, Integer> latchtbl, IStmt prg) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
         fileTable = ftbl;
         heap = h;
+        latchTable = latchtbl;
         // originalProgram = deepCopy(prg); //recreate the entire original prg
         id = getGlobalId();
         exeStack.push(prg);
@@ -80,6 +83,14 @@ public class PrgState {
         heap = h;
     }
 
+    public MyILatch<Integer, Integer> getLatchTable() {
+        return latchTable;
+    }
+
+    public void setLatchTable(MyILatch<Integer, Integer> latchtbl) {
+        latchTable = latchtbl;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -110,6 +121,7 @@ public class PrgState {
                 "SymTable:\n" + symTable.toString() +
                 "Out:\n" + out.toString() + "\n" +
                 "FileTable:\n" + fileTable.toString() +
-                "Heap:\n" + heap.toString() + "\n\n";
+                "Heap:\n" + heap.toString() + "\n" +
+                "LatchTable:\n" + latchTable.toString() + "\n";
     }
 }

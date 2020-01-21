@@ -1,8 +1,6 @@
 package GUI;
 
 import Controllers.Controller;
-import Exceptions.MyException;
-import Models.Collections.MyDictionary;
 import Models.Exps.ArithExp;
 import Models.Exps.ValueExp;
 import Models.Exps.VarExp;
@@ -14,14 +12,12 @@ import Models.Types.IntType;
 import Models.Types.RefType;
 import Models.Values.BoolValue;
 import Models.Values.IntValue;
-import Models.Values.RefValue;
 import Repositories.IRepository;
 import Repositories.Repository;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 
@@ -61,19 +57,17 @@ public class ProgramWindowController implements Initializable {
         IStmt ex1 = new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),
                 new CompStmt(new VarDeclStmt("cnt", new IntType()),
                         new CompStmt(new NewStmt("v1", new ValueExp(new IntValue(2))),
-                                new CompStmt(new NewSemaphoreStmt(new VarExp("cnt"), new rH(new VarExp("v1")), new ValueExp(new IntValue(1))),
-                new CompStmt(new forkStmt(new AcquireStmt(new VarExp("cnt"))),
+        new CompStmt(new NewSemaphoreStmt(new VarExp("cnt"), new rH(new VarExp("v1")), new ValueExp(new IntValue(1))),
+                new CompStmt(new forkStmt(new CompStmt(new AcquireStmt(new VarExp("cnt")),
                         new CompStmt(new wH("v1", new ArithExp('*', new rH(new VarExp("v1")), new ValueExp(new IntValue(10)))),
-                                new CompStmt(new PrintStmt(new rH(new VarExp("v1"))),
-                                        new CompStmt(new ReleaseStmt(new VarExp("cnt")),
-                new CompStmt(new forkStmt(new AcquireStmt(new VarExp("cnt"))),
+                                new CompStmt(new PrintStmt(new rH(new VarExp("v1"))), new ReleaseStmt(new VarExp("cnt")))))),
+                new CompStmt(new forkStmt(new CompStmt(new AcquireStmt(new VarExp("cnt")),
                         new CompStmt(new wH("v1", new ArithExp('*', new rH(new VarExp("v1")), new ValueExp(new IntValue(10)))),
                                 new CompStmt(new wH("v1", new ArithExp('*', new rH(new VarExp("v1")), new ValueExp(new IntValue(2)))),
-                                        new CompStmt(new PrintStmt(new rH(new VarExp("v1"))),
-                                                new CompStmt(new ReleaseStmt(new VarExp("cnt")),
-                                                        new CompStmt(new AcquireStmt(new VarExp("cnt")),
-                                                                new CompStmt(new PrintStmt(new ArithExp('-', new rH(new VarExp("v1")), new ValueExp(new IntValue(1)))),
-                                                                        new ReleaseStmt(new VarExp("cnt")))))))))))))))));
+                                        new CompStmt(new PrintStmt(new rH(new VarExp("v1"))), new ReleaseStmt(new VarExp("cnt"))))))),
+                new CompStmt(new AcquireStmt(new VarExp("cnt")),
+                        new CompStmt(new PrintStmt(new ArithExp('-', new rH(new VarExp("v1")), new ValueExp(new IntValue(1)))),
+                                new ReleaseStmt(new VarExp("cnt"))))))))));
 
         // bool b; int c; b=true; c=b?100:200; print(c); c=(false)?100:200; print(c);
         IStmt ex2 = new CompStmt(new VarDeclStmt("b", new BoolType()),

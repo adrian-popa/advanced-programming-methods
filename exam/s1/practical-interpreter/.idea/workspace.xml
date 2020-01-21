@@ -2,134 +2,193 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24eae2b5-0ff6-48d5-86c7-6955fd774915" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/dictionaries/adi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/interpreter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Controllers/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Exceptions/MyException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/MainWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/MainWindowController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/ProgramWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/ProgramWindowController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/META-INF/interpreter.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyDictionary.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyIDictionary.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyIHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyIList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyIStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/ArithExp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/Exp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/LogicExp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/RelExp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/ValueExp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/VarExp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Exps/rH.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/PrgState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/AssignStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/CompStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/IStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/IfStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/NewStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/NopStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/PrintStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/VarDeclStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/WhileStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/closeRFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/forkStmt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/openRFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/readFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/wH.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Types/BoolType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Types/IntType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Types/RefType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Types/StringType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Types/Type.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Values/BoolValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Values/IntValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Values/RefValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Values/StringValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Values/Value.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Repositories/IRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Repositories/Repository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Views/Command.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Views/ExitCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Views/Interpreter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Views/RunExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Views/TextMenu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Controllers/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Exceptions/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/MainWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/MainWindowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/ProgramWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/ProgramWindowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyIDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyIHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyIList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyIStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/ArithExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/Exp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/LogicExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/RelExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/ValueExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/VarExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Exps/rH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/PrgState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/AssignStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/CompStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/IStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/IfStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/NewStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/NopStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/PrintStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/VarDeclStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/WhileStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/closeRFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/forkStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/openRFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/readFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/wH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Types/BoolType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Types/IntType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Types/RefType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Types/StringType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Types/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Values/BoolValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Values/IntValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Values/RefValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Values/StringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Values/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Repositories/IRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Repositories/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Views/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Views/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Views/Interpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Views/RunExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Views/TextMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/test.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/libraries/javatuples_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/log9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Controller/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/FileTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/HeapTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/LatchTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyDictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyIDictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyIHeap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyILatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyIList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyISemaphore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyIStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/MyStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Adt/SemaphoreTable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/ArithExp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/Exp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/HeapReading.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/LogicExp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/NopeExp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/OperationEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/ValueExp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Exp/VarExp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/AssignStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/CompStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/ConditionalAssigmentStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/File/CloseRFileStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/File/OpenRFileStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/File/ReadRFileStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/ForkStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/Heap/HeapAllocation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/Heap/HeapWriting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/IStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/IfStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/PrgState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/PrintStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/ReleaseStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/RepeatUntil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/SwitchStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/VarDeclStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/WaitStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/WhileStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/acquireStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/awaitStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/countDownStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/newLatchStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/IStmt/newSmaphoreStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Type/BoolType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Type/IntType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Type/RefType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Type/StringType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Type/Type.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Value/BoolValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Value/IntValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Value/RefValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Value/StringValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Domain/Value/Value.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/META-INF/Lab2.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/MyException/MyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Repository/IRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/Repository/Repository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/ExitCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/Interpreter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/RunCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/RunForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/RunFormController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/SelectForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/SelectFormController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/out/production/Lab2/View/TextMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/repeat.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/FileTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/HeapTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/LatchTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyIDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyIHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyILatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyIList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyISemaphore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyIStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Adt/SemaphoreTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/ArithExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/Exp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/HeapReading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/LogicExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/NopeExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/OperationEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/ValueExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Exp/VarExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/AssignStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/CompStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/ConditionalAssigmentStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/File/CloseRFileStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/File/OpenRFileStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/File/ReadRFileStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/ForkStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/Heap/HeapAllocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/Heap/HeapWriting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/IStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/IfStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/NopStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/PrgState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/PrintStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/ReleaseStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/RepeatUntil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/SwitchStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/VarDeclStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/WaitStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/WhileStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/acquireStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/awaitStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/countDownStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/newLatchStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/IStmt/newSmaphoreStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Type/BoolType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Type/IntType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Type/RefType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Type/StringType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Type/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Value/BoolValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Value/IntValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Value/RefValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Value/StringValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Domain/Value/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/MyException/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/Repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/Interpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/RunCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/RunForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/RunFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/SelectForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/SelectFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/src/View/TextMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/switch.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2 - Copy - Copy/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyILatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Collections/MyLatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/AwaitStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/CountDownStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/NewLatchStmt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyILatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Collections/MyLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/AwaitStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/CountDownStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/NewLatchStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/MainWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/MainWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/ProgramWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/GUI/ProgramWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/PrgState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/forkStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/out/production/interpreter/Models/Stmts/forkStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/ProgramWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/GUI/ProgramWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/forkStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../s2/practical-interpreter/src/Models/Stmts/forkStmt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,6 +388,10 @@
       <workItem from="1578564944801" duration="1748000" />
       <workItem from="1579513110537" duration="20187000" />
       <workItem from="1579592400993" duration="497000" />
+      <workItem from="1579593825940" duration="602000" />
+      <workItem from="1579594468147" duration="1263000" />
+      <workItem from="1579595783108" duration="3316000" />
+      <workItem from="1579599888469" duration="2869000" />
     </task>
     <servers />
   </component>
@@ -401,49 +464,49 @@
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592371461" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577968841555" />
-    <state width="1876" height="326" key="GridCell.Tab.0.bottom" timestamp="1579592898222">
+    <state width="1876" height="326" key="GridCell.Tab.0.bottom" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898222" />
+    <state width="1876" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578506458105" />
     <state width="1876" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579559383210" />
-    <state width="1876" height="326" key="GridCell.Tab.0.center" timestamp="1579592898221">
+    <state width="1876" height="326" key="GridCell.Tab.0.center" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898221" />
+    <state width="1876" height="326" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="195" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578506458105" />
     <state width="1876" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579559383210" />
-    <state width="1876" height="326" key="GridCell.Tab.0.left" timestamp="1579592898221">
+    <state width="1876" height="326" key="GridCell.Tab.0.left" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898221" />
+    <state width="1876" height="326" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="195" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578506458105" />
     <state width="1876" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579559383210" />
-    <state width="1876" height="326" key="GridCell.Tab.0.right" timestamp="1579592898222">
+    <state width="1876" height="326" key="GridCell.Tab.0.right" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898222" />
+    <state width="1876" height="326" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="195" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578506458105" />
     <state width="1876" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579559383210" />
-    <state width="1876" height="326" key="GridCell.Tab.1.bottom" timestamp="1579592898222">
+    <state width="1876" height="326" key="GridCell.Tab.1.bottom" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898222" />
+    <state width="1876" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579559391679" />
-    <state width="1876" height="326" key="GridCell.Tab.1.center" timestamp="1579592898222">
+    <state width="1876" height="326" key="GridCell.Tab.1.center" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898222" />
+    <state width="1876" height="326" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579559391678" />
-    <state width="1876" height="326" key="GridCell.Tab.1.left" timestamp="1579592898222">
+    <state width="1876" height="326" key="GridCell.Tab.1.left" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898222" />
+    <state width="1876" height="326" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579559391678" />
-    <state width="1876" height="326" key="GridCell.Tab.1.right" timestamp="1579592898222">
+    <state width="1876" height="326" key="GridCell.Tab.1.right" timestamp="1579595731690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="326" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592898222" />
+    <state width="1876" height="326" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579595731690" />
     <state width="1876" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579559391679" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579519519771">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -465,10 +528,10 @@
     <state x="870" y="107" width="758" height="568" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579529990886" />
     <state x="2790" y="108" width="758" height="568" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578505571805" />
     <state x="870" y="108" width="758" height="638" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579558133418" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579592066459">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579594045717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579592066459" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579594045717" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576147368778" />
   </component>
   <component name="XDebuggerManager">
@@ -476,13 +539,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Models/Stmts/ReleaseStmt.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Models/Stmts/AcquireStmt.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="3" />
+          <line>38</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

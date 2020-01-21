@@ -39,6 +39,12 @@ public class MainWindowController implements Initializable {
     @FXML
     private TableColumn<Map.Entry<Integer, Value>, String> heapTableValues;
     @FXML
+    private TableView<Map.Entry<Integer, Integer>> latchTableView;
+    @FXML
+    private TableColumn<Map.Entry<Integer, Value>, Integer> latchTableLocation;
+    @FXML
+    private TableColumn<Map.Entry<Integer, Value>, String> latchTableValue;
+    @FXML
     private ListView<String> outView;
     @FXML
     private ListView<String> fileTableView;
@@ -63,6 +69,9 @@ public class MainWindowController implements Initializable {
         symTableNames.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getKey() + " "));
         symTableValues.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getValue() + " "));
 
+        latchTableLocation.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getKey()).asObject());
+        latchTableValue.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getValue() + " "));
+
         prgIdentifiersView.setOnMouseClicked(mouseEvent -> changePrgStateHandler(getSelectedPrgState()));
 
         exeButton.setDisable(true);
@@ -79,6 +88,7 @@ public class MainWindowController implements Initializable {
             populateOutView(currentPrgState);
             populateFileTableView(currentPrgState);
             populateHeapTableView(currentPrgState);
+            populateLatchTableView(currentPrgState);
         } catch (MyException e) {
             Alert error = new Alert(Alert.AlertType.ERROR, e.getMessage());
             error.show();
@@ -145,6 +155,11 @@ public class MainWindowController implements Initializable {
     private void populateHeapTableView(PrgState givenPrgState) throws MyException {
         heapTableView.setItems(FXCollections.observableList(new ArrayList<>(givenPrgState.getHeap().getContent().entrySet())));
         heapTableView.refresh();
+    }
+
+    private void populateLatchTableView(PrgState givenPrgState) throws MyException {
+        latchTableView.setItems(FXCollections.observableList(new ArrayList<>(givenPrgState.getLatchTable().getContent().entrySet())));
+        latchTableView.refresh();
     }
 
     private void populateIdentifiersView() {
