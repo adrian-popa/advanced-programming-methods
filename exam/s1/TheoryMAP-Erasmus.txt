@@ -1,0 +1,16 @@
+Theory Subjects – 16 January 2020
+
+Work Time: 30min
+Please copy the subjects and then close your laptops.
+
+1.(3p). Compare static vs non-static methods in Java.  Static methods are declared using the keyword /static/, they are shared by all class instances, meaning that they do not depend on the current state of the class, while non-static methods can access and modify the state of the instance; static methods are independent of all other non-static methods, they are called using the class name (MyClass.myStaticMethod();) and they cannot call other methods or use outside fields which are not static, they can use or call only the static members; this is not a constraint when we talk about non-static methods (they can call/access both non-static and static methods and fields)
+2.(3p). Given the following collection 
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,14,15,16);
+Using Java functional style (Java streams), 
+please write a program that is doing the following operations in the following order:
+a)eliminates all the numbers which are not multiple of  4;
+b)transform each remaining number into its succesor (eg. 4 is transformed into 5); 
+c)compute the sum modulo 2 of the remaining numbers (eg. (9 +5) mod 2=0)
+d)transform the result into a list
+List<Integer> finalNumbers = Collections.singletonList(                numbers.stream()                        .filter(n -> n % 4 == 0)                        .map(n -> n + 1)                        .reduce(0, (a, b) -> (a + b) % 2)        );
+3.(3p). What is a Semaphore in Java.  - the java.util.concurrent.Semaphore class is a counting semaphore  - the counting semaphore is initialized with a give number of "permits"  - for each call to acquire() a permit is taken by the calling thread  - for each call to release() a permit is returned to the semaphore  - thus, at most N threads can pass the acquire() method without any release() calls, where N is the number of permits the semaphore was initialized with.    A semaphore typically has two uses:    - to guard a critical section against entry by more than N threads at a time.    - to send signals between two threads.

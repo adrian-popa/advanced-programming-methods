@@ -1,0 +1,1529 @@
+PrgState with id: 1
+ExeStack:
+(Ref(int )v1;(int cnt;(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))))))
+SymTable:
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+Ref(int )v1
+(int cnt;(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))))
+SymTable:
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+Ref(int )v1
+(int cnt;(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))))
+SymTable:
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(int cnt;(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))))
+SymTable:
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(int cnt;(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))))
+SymTable:
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+int cnt
+(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))))
+SymTable:
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+int cnt
+(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))))
+SymTable:
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))))
+SymTable:
+cnt:0
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(new(v1,2);(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))))
+SymTable:
+cnt:0
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+new(v1,2)
+(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))
+SymTable:
+cnt:0
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+new(v1,2)
+(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))
+SymTable:
+cnt:0
+v1:(0,int )
+Out:
+[]
+FileTable:
+Heap:
+{}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))
+SymTable:
+cnt:0
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(newSemaphore(cnt,rH(v1),1);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))))
+SymTable:
+cnt:0
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+newSemaphore(cnt,rH(v1),1)
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))
+SymTable:
+cnt:0
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+newSemaphore(cnt,rH(v1),1)
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))
+SymTable:
+cnt:0
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+
+PrgState with id: 1
+ExeStack:
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 1
+ExeStack:
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 1
+ExeStack:
+fork(acquire(cnt))
+(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 1
+ExeStack:
+fork(acquire(cnt))
+(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 1
+ExeStack:
+(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 10
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 1
+ExeStack:
+(wH(v1,rH(v1)*10);(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 10
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{},1)
+
+PrgState with id: 1
+ExeStack:
+wH(v1,rH(v1)*10)
+(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 10
+ExeStack:
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+wH(v1,rH(v1)*10)
+(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=2}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(print(rH(v1));(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+print(rH(v1))
+(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+print(rH(v1))
+(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(release(cnt);(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+release(cnt)
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+release(cnt)
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(fork(acquire(cnt));(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+fork(acquire(cnt))
+(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+fork(acquire(cnt))
+(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+wH(v1,rH(v1)*10)
+(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+wH(v1,rH(v1)*10)
+(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=20}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(wH(v1,rH(v1)*2);(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+wH(v1,rH(v1)*2)
+(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+wH(v1,rH(v1)*2)
+(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=200}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(print(rH(v1));(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt)))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+print(rH(v1))
+(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+print(rH(v1))
+(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(release(cnt);(acquire(cnt);(print(rH(v1)-1);release(cnt))))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+release(cnt)
+(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+release(cnt)
+(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+(acquire(cnt);(print(rH(v1)-1);release(cnt)))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 1
+ExeStack:
+acquire(cnt)
+(print(rH(v1)-1);release(cnt))
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
+PrgState with id: 100
+ExeStack:
+acquire(cnt)
+SymTable:
+cnt:1
+v1:(1,int )
+Out:
+[20, 400]
+FileTable:
+Heap:
+{1=400}
+SemaphoreTable:
+(2,{10 },1)
+
